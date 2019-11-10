@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.MyTrips"
+    android:background="#FFFFFF"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/headerabout"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/aboutImage"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/tanish"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="40dp"
+            />
+
+        <TextView
+            android:id="@+id/aboutSemigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="SemiGo"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:textColor="@color/quantum_white_100"
+            app:layout_constraintTop_toBottomOf="@id/aboutImage"
+            tools:layout_editor_absoluteX="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/headerabout"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/aboutText"
+            app:layout_constraintTop_toBottomOf="@id/headerabout"
+            android:layout_marginTop="60dp"
+            android:lineHeight="20dp"
+            android:text="SemiGo is a way of making your daily travel cheaper, safer and hassle free. With SemiGO, ride with your colleagues and connect to more people while travelling. No more annoying and time consuming detours for picking up poolmates."
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@id/aboutText"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Version 1.10"
+            android:id="@+id/version"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/aboutText"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/version"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/quantum_grey"
+            android:text="Connect with us"
+            android:id="@+id/connectwithus"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/version"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact us"
+            android:id="@+id/contactus"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/connectwithus"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/contactus"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Follow us on Instagram"
+            android:id="@+id/instagram"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/contactus"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/instagram"
+            android:background="@android:color/darker_gray" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
