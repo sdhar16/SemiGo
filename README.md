@@ -1,5 +1,5 @@
 # SemiGo
-App that connects cab users travelling in the same direction
+App that connects cab users travelling in the same direction. Designed using various UI/UX methods.
 
 Everyday, students in colleges and universities take cabs to go home.
 Yet everyday they have to balance between comfort and money, whether to give expensive fares and travel comfortably, 
